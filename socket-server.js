@@ -1,5 +1,6 @@
 var express = require("express");
 const mongo = require("./utlis/mongo");
+var PORT = process.env.PORT || 5000
 
 var app = express();
 
