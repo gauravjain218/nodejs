@@ -33,6 +33,6 @@ app.get("/", (req, res)=>{
     res.sendFile(__dirname + '/public/socket-client.html');
 })
 
-server.listen(3000, ()=>{
+server.listen(PORT, ()=>{
     console.log("Socket server running on port 3000");
 })
