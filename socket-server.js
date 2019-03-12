@@ -1,5 +1,4 @@
 var express = require("express");
-const mongo = require("./utlis/mongo");
 var PORT = process.env.PORT || 5000
 
 var app = express();
@@ -9,7 +8,6 @@ var http = require("http");
 var server = http.createServer(app);
 
 var io = require("socket.io")(server);
-mongo.connect();
 
 io.on("connection", client =>{
     console.log("New client connected...", client.id);
